@@ -1,9 +1,14 @@
 import React from 'react'
+import Discover from './Discover/Discover';
+import Explore from './Explore/Explore';
+import Destination from './Destination/Destination';
 
 const Main = () => {
     return (
         <main>
-            <h2>ini main content</h2>
+            <Discover />
+            <Explore />
+            <Destination />
         </main>
     )
 }

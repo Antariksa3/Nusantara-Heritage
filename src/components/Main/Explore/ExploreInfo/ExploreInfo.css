@@ -1,0 +1,20 @@
+.glass-info {
+    width: 372px;
+    padding: 16px;
+    border-radius: 16px;
+    background: linear-gradient(162deg, rgba(255, 255, 255, 0.40) 12.17%, rgba(255, 255, 255, 0.10) 47.81%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(12.5px);
+}
+
+.glass-info h5 {
+    color: white;
+    font-size: 1.25em;
+    margin-bottom: 12px;
+}
+
+.glass-info p {
+    font-size: 0.8em;
+    margin-bottom: 8px;
+    font-weight: 300;
+}

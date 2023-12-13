@@ -1,0 +1,33 @@
+.destination-card {
+    position: relative;
+    height: 320px;
+    width: 240px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.destination-card:hover img {
+    transform: scale(1.1);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination-text {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.destination-text p {
+    font-weight: 500;
+    font-size: 1.25em;
+}

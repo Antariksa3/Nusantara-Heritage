@@ -1,0 +1,34 @@
+.explore {
+    padding: 0 100px 40px;
+    height: 100%;
+    background: linear-gradient(180deg, #00060B 0%, #153C5D 18%);
+}
+
+.explore-content {
+    padding-top: 120px;
+}
+
+.explore-heading {
+    margin-bottom: 2em;
+}
+
+.explore-heading h3 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+
+.explore-map-frame {
+    padding: 40px;
+    background-color: #237D98;
+    border: 16px solid #F0DF99;
+    border-radius: 16px;
+}
+
+.indonesian-map {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.1);
+}
