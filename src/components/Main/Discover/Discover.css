@@ -58,7 +58,6 @@ p {
     grid-template-columns: repeat(3, auto);
     position: absolute;
     left: 0;
-    /* z-index: 1; */
 }
 
 .discover-clouds img {
