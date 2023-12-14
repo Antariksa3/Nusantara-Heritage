@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import './Header.css'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
+
+    const [showNavbar, setShowNavbar] = useState(false)
+
+    const handleShowNavbar = () => {
+        setShowNavbar(!showNavbar)
+    }
+
     return (
         <header>
             <p className='web-name'>NUSANTARA HERITAGE</p>
-            <nav>
-                <a href="">Provinsi</a>
-                <a href="">Wisata</a>
-                <a href="">Kuliner</a>
-                <a href="">Kebudayaan</a>
-                <a href="">Bahasa</a>
+            <div className={`menu ${showNavbar && 'active'}`} onClick={handleShowNavbar}>=</div>
+            <nav className={`nav-a ${showNavbar && 'active'}`}>
+                <div className={`close-btn ${showNavbar && 'active'}`} onClick={handleShowNavbar}>x</div>
+                <NavLink to={""}>Provinsi</NavLink>
+                <NavLink to={""}>Wisata</NavLink>
+                <NavLink to={""}>Kuliner</NavLink>
+                <NavLink to={""}>Kebudayaan</NavLink>
+                <NavLink to={""}>Bahasa</NavLink>
             </nav>
         </header>
     )
