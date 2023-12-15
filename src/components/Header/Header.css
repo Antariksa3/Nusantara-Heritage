@@ -1,15 +1,20 @@
 header {
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     max-width: 100%;
 }
 
+.header.active {
+    background: rgba(120, 117, 117, 0.5);
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.5);
+}
+
 .web-name {
-    padding: 32px 80px;
+    padding: 32px 14px 32px 80px;
     font-weight: bold;
-    font-size: large;
+    font-size: 1.2em;
 }
 
 header>.menu {
@@ -18,19 +23,13 @@ header>.menu {
 
 header>.nav-a {
     display: flex;
+    font-size: 1em;
     text-align: center;
-    padding: 32px 80px;
+    padding: 32px 80px 32px 0;
 }
 
 header>.nav-a>.close-btn {
     display: none;
-    /* padding: 0 20px 2px 20px;
-    background-position: 0 100%;
-    display: inline-block;
-    font-weight: bold;
-    font-size: large;
-    color: white;
-    cursor: pointer; */
 }
 
 header>.nav-a>a {
@@ -62,12 +61,18 @@ header>.nav-btn {
     position: absolute;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+
+    .web-name {
+        padding: 32px 0 32px 80px;
+        font-weight: bold;
+        font-size: 1em;
+    }
 
     header>.menu {
         padding: 32px 80px;
         font-weight: bold;
-        font-size: large;
+        font-size: 1em;
         color: white;
         display: block;
         cursor: pointer;

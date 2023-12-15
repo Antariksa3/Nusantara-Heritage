@@ -11,7 +11,7 @@ const Home = () => {
                 <Header />
             </BrowserRouter>
             <Main />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
