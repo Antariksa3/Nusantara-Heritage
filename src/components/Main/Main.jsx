@@ -8,7 +8,7 @@ const Main = () => {
         <main>
             <Discover />
             <Explore />
-            {/* <Destination /> */}
+            <Destination />
         </main>
     )
 }

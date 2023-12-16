@@ -18,3 +18,14 @@
     margin-bottom: 8px;
     font-weight: 300;
 }
+
+@media (max-width: 768px) {
+
+    .glass-info h5 {
+        font-size: 1em;
+    }
+
+    .glass-info p {
+        font-size: 0.75em;
+    }
+}
