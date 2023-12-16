@@ -1,4 +1,4 @@
-header {
+.header {
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -10,6 +10,7 @@ header {
 .header.active {
     background: rgba(120, 117, 117, 0.5);
     border-bottom: 0.1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-out;
 }
 
 .web-name {
@@ -18,22 +19,22 @@ header {
     font-size: 1.2em;
 }
 
-header>.menu {
+.header>.menu {
     display: none;
 }
 
-header>.nav-a {
+.header>.nav-a {
     display: flex;
     font-size: 1em;
     text-align: center;
     padding: 32px 80px 32px 0;
 }
 
-header>.nav-a>.close-btn {
+.header>.close-btn {
     display: none;
 }
 
-header>.nav-a>a {
+.header>.nav-a>a {
     text-decoration: none;
     color: white;
     padding: 0 20px 2px 20px;
@@ -47,30 +48,34 @@ header>.nav-a>a {
         background-position 0s 0.5s;
 }
 
-header>.nav-a>a:hover {
+.header>.nav-a>a:hover {
     background-position: 100% 100%;
     background-size: 100% 2px;
 }
 
-header>.nav-a>.nav-close-btn {
+.header>.nav-a>.nav-close-btn {
     visibility: hidden;
     position: absolute;
 }
 
-header>.nav-btn {
+.header>.nav-btn {
     visibility: hidden;
     position: absolute;
 }
 
 @media (max-width: 768px) {
-
     .web-name {
         padding: 32px 0 32px 80px;
         font-weight: bold;
         font-size: 1em;
     }
 
-    header>.menu {
+    .header.menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header>.menu {
         padding: 32px 80px;
         font-weight: bold;
         font-size: 1em;
@@ -79,46 +84,39 @@ header>.nav-btn {
         cursor: pointer;
     }
 
-    header>.menu.active {
-        display: none;
-    }
-
-    header>.nav-a {
-        display: none;
-    }
-
-
-    header>.nav-a>.close-btn.active {
-        padding: 0 20px 2px 20px;
-        margin-bottom: 50px;
-        display: inline-block;
-        font-weight: bold;
-        font-size: large;
-        color: white;
-        cursor: pointer;
-    }
-
-    header>.nav-a.active {
-        background: linear-gradient(to bottom, rgba(13, 3, 3, 0%), rgba(13, 3, 3, 100%));
+    .header>.nav-a.active {
+        background: linear-gradient(to bottom, rgba(13, 3, 3, 20%), rgba(13, 3, 3, 100%));
+        padding: 0;
+        position: absolute;
+        top: 88px;
+        width: 100vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
         text-align: center;
         transition: all 0.3s ease-out;
-        padding: 32px 80px;
     }
 
-    header>.nav-a>a {
-        text-decoration: none;
+    .header>.menu.active {
+        display: none;
+    }
+
+    .header>.nav-a {
+        display: none;
+    }
+
+    .header>.close-btn.active {
+
+        padding: 32px 80px 32px 0;
+        display: flex;
+        align-self: flex-end;
+        font-weight: bold;
+        font-size: 1em;
         color: white;
+        cursor: pointer;
+    }
+
+    .header>.nav-a>a {
         padding: 20px 0 20px 2px;
-        display: inline-block;
-        background-image: linear-gradient(white 0 0);
-        background-position: 0 100%;
-        background-size: 0% 2px;
-        background-repeat: no-repeat;
-        transition:
-            background-size 0.5s,
-            background-position 0s 0.5s;
     }
 }
