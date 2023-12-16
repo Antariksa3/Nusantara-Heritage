@@ -1,19 +1,19 @@
 import React from 'react'
 import Header from '../components/Header/Header'
-import Main from '../components/Main/Main'
+import DetailExplore from '../components/DetailExplore/DetailExplore'
 import Footer from '../components/Footer/Footer'
 import { BrowserRouter } from 'react-router-dom'
 
-const Home = () => {
+const DetailProvince = () => {
     return (
         <div>
             <BrowserRouter>
                 <Header />
             </BrowserRouter>
-            <Main />
+            <DetailExplore />
             <Footer />
         </div>
     )
 }
 
-export default Home
+export default DetailProvince   

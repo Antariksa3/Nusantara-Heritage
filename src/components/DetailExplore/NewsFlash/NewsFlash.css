@@ -1,0 +1,39 @@
+.section-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-one>.image {
+    width: 38em;
+    height: 20em;
+    border-radius: 10px;
+    margin-right: 33px;
+    background: url('/src/assets/images/discover/discover-background-ori.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-one>.news-flash {
+    width: 62vw;
+    height: 20vw;
+    margin-bottom: 110px;
+}
+
+.section-one>.news-flash>.title {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.section-one>.news-flash {
+    width: 62vw;
+    height: 20vw;
+}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
