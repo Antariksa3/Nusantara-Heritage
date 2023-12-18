@@ -1,0 +1,28 @@
+svg {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+p {
+    z-index: 99;
+    font-size: large;
+}
+
+svg>#Provinces>path:hover {
+    fill: #BCDE3B;
+}
+
+svg>#Provinces>g>path:hover {
+    fill: #BCDE3B;
+}
+
+svg>#Provinces>g:hover {
+    fill: #BCDE3B;
+}
+
+/* svg>#Provinces>#KU>#Vector_3:hover {
+    fill: #BCDE3B;
+} */
