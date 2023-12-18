@@ -1,0 +1,83 @@
+.background {
+    position: relative;
+    text-align: center;
+    background-color: #10314D;
+    color: #ffffff; 
+    margin-top: 0px;
+
+  }
+  
+  .footertengah {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .footerkiri {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 30%; /* Sesuaikan dengan kebutuhan Anda */
+    height: auto;
+  }
+  
+  .footerkanan {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 30%; /* Sesuaikan dengan kebutuhan Anda */
+    height: auto;
+  }
+  
+  .Footer2023IndonesiaPrivacyAndPolicy {
+    position: relative;
+  }
+
+  .Footer2023IndonesiaPrivacyAndPolicy::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    width: 50%;
+    height: 1px;
+  }
+  
+  .FooterLogo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  
+  .FooterLogoText {
+    margin-right: 10px;
+  }
+  
+  .footerlogo {
+    max-width: 100px; /* Sesuaikan dengan kebutuhan Anda */
+    height: auto;
+  }
+  
+  /* .footerlist {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  } */
+  
+  .FooterHubungiKami {
+    margin-top: 20px;
+  }
+  
+  .FooterHubungiKamiText {
+    font-weight: bold;
+  }
+  
+  .FooterIndonesiaGmailCom {
+    margin-top: 5px;
+  }
+  
