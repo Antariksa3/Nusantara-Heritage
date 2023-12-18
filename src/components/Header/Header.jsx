@@ -25,8 +25,8 @@ const Header = () => {
         <header className={`header ${addBackground && 'active'}`}>
             <p className='web-name'>NUSANTARA HERITAGE</p>
             <div className={`menu ${showSidebar && 'active'}`} onClick={handleShowSidebar}>=</div>
+            <div className={`close-btn ${showSidebar && 'active'}`} onClick={handleShowSidebar}>x</div>
             <nav className={`nav-a ${showSidebar && 'active'}`}>
-                <div className={`close-btn ${showSidebar && 'active'}`} onClick={handleShowSidebar}>x</div>
                 <NavLink to={""}>Provinsi</NavLink>
                 <NavLink to={""}>Wisata</NavLink>
                 <NavLink to={""}>Kuliner</NavLink>

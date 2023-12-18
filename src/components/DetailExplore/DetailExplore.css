@@ -1,0 +1,12 @@
+.detail {
+    padding: 120px 80px 0 80px;
+    height: max-content;
+    background-color: #153C5D;
+}
+
+.detail>.province-name {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 76px;
+}

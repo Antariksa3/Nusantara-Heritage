@@ -1,7 +1,7 @@
 import React from "react";
 import './Explore.css'
 
-import map from '../../../assets/images/explore/explore-map.svg'
+import Map from './Map/Map'
 import ExploreInfo from "./ExploreInfo/ExploreInfo";
 
 const Explore = () => {
@@ -13,7 +13,7 @@ const Explore = () => {
                 </div>
                 <div className="explore-map">
                     <div className="explore-map-frame">
-                        <img src={map} alt="" className="indonesian-map" />
+                        <Map />
                         <ExploreInfo />
                     </div>
                 </div>

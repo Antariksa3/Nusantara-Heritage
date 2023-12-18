@@ -58,6 +58,7 @@ p {
     grid-template-columns: repeat(3, auto);
     position: absolute;
     left: 0;
+    bottom: -150px;
 }
 
 .discover-clouds img {
@@ -73,4 +74,33 @@ p {
 .discover-clouds img:nth-child(2) {
     width: 120%;
     height: auto;
+}
+
+.discover-carousel {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item {
+    padding: 32px;
+}
+
+.discover-carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.swiper_container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    height: 100%;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
 }

@@ -1,16 +1,16 @@
 import React from 'react'
 import Header from '../components/Header/Header'
-import Main from '../components/Main/Main'
+import DetailExplore from '../components/DetailExplore/DetailExplore'
 import Footer from '../components/Footer/Footer'
 
-const Home = () => {
+const DetailProvince = () => {
     return (
         <div>
             <Header />
-            <Main />
+            <DetailExplore />
             <Footer />
         </div>
     )
 }
 
-export default Home
+export default DetailProvince   

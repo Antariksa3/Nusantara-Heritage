@@ -1,0 +1,149 @@
+.main-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: calc(48vw - 80px) calc(48vw - 80px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+}
+
+.grid>.first {
+    display: flex;
+    text-align: justify;
+}
+
+.grid>.first>.text {
+    width: 70%;
+    height: fit-content;
+    margin-right: 36px;
+}
+
+.grid>.first>.text>.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grid>.first>.text>.content {
+    font-size: calc(1em - 2px);
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.grid>.first>.image {
+    width: 200px;
+    height: 200px;
+    background: url('../../../assets/images/destination/destination-image-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+/* second */
+
+.grid>.second {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: justify;
+}
+
+.grid>.second>.text {
+    width: 70%;
+    height: fit-content;
+    margin-left: 36px;
+}
+
+.grid>.second>.text>.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grid>.second>.text>.content {
+    font-size: calc(1em - 2px);
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.grid>.second>.image {
+    width: 200px;
+    height: 200px;
+    background: url('../../../assets/images/destination/destination-image-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+/* third */
+
+.grid>.third {
+    display: flex;
+    text-align: justify;
+}
+
+.grid>.third>.text {
+    width: 70%;
+    height: fit-content;
+    margin-right: 36px;
+}
+
+.grid>.third>.text>.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grid>.third>.text>.content {
+    font-size: calc(1em - 2px);
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.grid>.third>.image {
+    width: 200px;
+    height: 200px;
+    background: url('../../../assets/images/destination/destination-image-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+/* fourth */
+
+.grid>.fourth {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: justify;
+}
+
+.grid>.fourth>.text {
+    width: 70%;
+    height: fit-content;
+    margin-left: 36px;
+}
+
+.grid>.fourth>.text>.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grid>.fourth>.text>.content {
+    font-size: calc(1em - 2px);
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.grid>.fourth>.image {
+    width: 200px;
+    height: 200px;
+    background: url('../../../assets/images/destination/destination-image-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
