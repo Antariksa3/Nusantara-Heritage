@@ -23,7 +23,7 @@ const Header = () => {
 
     return (
         <header className={`header ${addBackground && 'active'}`}>
-            <p className='web-name'>NUSANTARA HERITAGE</p>
+            <h5 className='web-name'>NUSANTARA HERITAGE</h5>
             <div className={`menu ${showSidebar && 'active'}`} onClick={handleShowSidebar}>=</div>
             <div className={`close-btn ${showSidebar && 'active'}`} onClick={handleShowSidebar}>x</div>
             <nav className={`nav-a ${showSidebar && 'active'}`}>

@@ -1,83 +1,102 @@
-.background {
-    position: relative;
-    text-align: center;
-    background-color: #10314D;
-    color: #ffffff; 
-    margin-top: 0px;
+.footer {
+  background-color: #10314D;
+  color: #ffffff;
+  padding: 50px 50px 30px 50px;
+  background-image: url(../../assets/images/footer/footer3.png), url(../../assets/images/footer/footer4.png), url(../../assets/images/footer/footer1.png);
+  background-repeat: no-repeat;
+  background-position: left bottom, right bottom, center;
+}
 
+.footer-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  padding-bottom: 96px;
+}
+
+.footer-logo img {
+  margin-right: 10px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: space-between;
+  z-index: 1;
+  padding: 0 100px;
+}
+
+.footer-content h5 {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  row-gap: .75em;
+}
+
+.footer-link {
+  font-size: 1em;
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.footer-copy::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 50%;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .footer-content {
+    padding: 0 50px;
   }
-  
-  .footertengah {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .footerkiri {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    max-width: 30%; /* Sesuaikan dengan kebutuhan Anda */
-    height: auto;
-  }
-  
-  .footerkanan {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 30%; /* Sesuaikan dengan kebutuhan Anda */
-    height: auto;
-  }
-  
-  .Footer2023IndonesiaPrivacyAndPolicy {
-    position: relative;
+}
+
+@media (max-width: 872px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2em;
   }
 
-  .Footer2023IndonesiaPrivacyAndPolicy::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    right: 50%;
-    width: 50%;
-    height: 1px;
+  .footer-copy {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
   }
-  
-  .FooterLogo {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-left: 100px;
-    margin-top: 20px;
+}
+
+@media (max-width: 686px) {
+  .footer {
+    background-image: url(../../assets/images/footer/footer3.png), url(../../assets/images/footer/footer1.png);
+    background-position: left bottom, center;
   }
-  
-  .FooterLogoText {
-    margin-right: 10px;
+}
+
+@media (max-width: 504px) {
+
+  .footer-logo {
+    padding-bottom: 0;
   }
-  
-  .footerlogo {
-    max-width: 100px; /* Sesuaikan dengan kebutuhan Anda */
-    height: auto;
+
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2em;
   }
-  
-  /* .footerlist {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-  } */
-  
-  .FooterHubungiKami {
-    margin-top: 20px;
-  }
-  
-  .FooterHubungiKamiText {
-    font-weight: bold;
-  }
-  
-  .FooterIndonesiaGmailCom {
-    margin-top: 5px;
-  }
-  
+
+}
