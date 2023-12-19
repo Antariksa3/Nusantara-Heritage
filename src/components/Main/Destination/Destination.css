@@ -1,7 +1,22 @@
 .destination {
-    padding: 0 120px 40px;
+    position: relative;
+    padding: 0 120px 80px;
     height: 100%;
     background-color: #153C5D;
+}
+
+.destination::before {
+    content: "";
+    background-image: url('../../../assets/images/destination/base.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.22;
 }
 
 .destination-content {

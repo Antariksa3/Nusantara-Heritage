@@ -1,0 +1,11 @@
+.funfact {
+    width: 100vw;
+    height: auto;
+    padding: 80px 120px 80px;
+    background-color: #153C5D;
+}
+
+.funfact-heading h3 {
+    color: white;
+    font-size: 2.5em;
+}
