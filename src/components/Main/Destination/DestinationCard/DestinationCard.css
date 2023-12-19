@@ -1,7 +1,7 @@
 .destination-card {
     position: relative;
-    height: 320px;
-    width: 240px;
+    height: 312px;
+    width: 232px;
     overflow: hidden;
     border-radius: 12px;
 }
@@ -30,4 +30,30 @@
 .destination-text p {
     font-weight: 500;
     font-size: 1.25em;
+}
+
+@media (max-width: 964px) {
+    .destination-card {
+        height: 240px;
+        width: 180px;
+    }
+
+    .destination-text p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .destination-card {
+        height: 200px;
+        width: 140px;
+    }
+
+    .destination-text {
+        bottom: 20px;
+    }
+
+    .destination-text p {
+        font-size: 0.9em;
+    }
 }

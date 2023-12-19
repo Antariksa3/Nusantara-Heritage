@@ -14,6 +14,10 @@
     padding: 160px 0 48px 0;
 }
 
+.discover-heading {
+    width: 100%;
+}
+
 .discover-heading h1,
 h2,
 p {
@@ -103,4 +107,86 @@ p {
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right {
     display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .discover-content {
+        grid-template-columns: 1fr;
+        padding: 120px 0 48px 0;
+    }
+
+    .discover-heading h1 {
+        font-size: 4em;
+    }
+
+    .discover-heading h2 {
+        font-size: 3em;
+    }
+
+    .discover-heading p {
+        font-size: 1.2em;
+        /* width: 100%; */
+    }
+
+    .discover-heading button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .discover-carousel {
+        width: 55%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .discover-content {
+        padding: 80px 0 48px 0;
+    }
+
+    .discover-heading h1 {
+        font-size: 3.5em;
+    }
+
+    .discover-heading h2 {
+        font-size: 2.5em;
+    }
+
+    .discover-heading p {
+        font-size: 1.1em;
+    }
+
+    .discover-heading button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .discover-carousel {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .discover-heading h1 {
+        font-size: 3em;
+    }
+
+    .discover-heading h2 {
+        font-size: 2em;
+    }
+
+    .discover-heading p {
+        font-size: 1em;
+        width: 50%;
+    }
+
+    .discover-heading button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    .discover-carousel {
+        width: 70%;
+        margin: 0;
+    }
 }

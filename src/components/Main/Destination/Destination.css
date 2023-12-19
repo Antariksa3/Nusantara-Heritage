@@ -52,6 +52,18 @@
 
 @media (max-width: 768px) {
     .destination-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 684px) {
+    .destination {
+        padding: 0 60px 40px;
+    }
+}
+
+@media (max-width: 584px) {
+    .destination-cards {
         grid-template-columns: repeat(2, 1fr);
     }
 }
