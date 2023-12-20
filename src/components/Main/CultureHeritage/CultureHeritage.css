@@ -1,0 +1,154 @@
+.culture {
+    position: relative;
+    background-color: #153C5D;
+    padding: 0 120px 80px;
+}
+
+.culture>.heading>h3 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.culture>.grid {
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+}
+
+.culture>.grid>.grid-1 {
+    position: relative;
+}
+
+.culture>.grid>.grid-1>.top-info {
+    display: flex;
+    position: absolute;
+    top: -7vw;
+    left: -2vw;
+}
+
+.culture>.grid>.grid-1>.main-info {
+    margin-top: 30px;
+    font-weight: 300;
+    opacity: 80%;
+    color: white;
+    width: auto;
+    text-align: justify;
+}
+
+.culture>.grid>.grid-1>.circle {
+    width: 18vw;
+    height: 18vw;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgba(103, 46, 28, 100), rgba(26, 116, 142, 0))
+}
+
+.culture>.grid>.grid-1>.top-info>.wayang {
+    width: 20vw;
+}
+
+.culture>.grid>.grid-1>.top-info>.title {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+}
+
+.culture>.grid>.grid-1>.top-info>.title>.cult-name {
+    color: #F0DF99;
+    font-size: 4vw;
+}
+
+.culture>.grid>.grid-1>.top-info>.title>.year {
+    color: white;
+    font-size: 2vw;
+}
+
+@media (max-width: 1024px) {
+    .culture>.grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .culture>.grid>.grid-1>.top-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .culture>.grid>.grid-1>.circle {
+        width: 340px;
+        height: 340px;
+    }
+
+    .culture>.grid>.grid-1>.top-info>.wayang {
+        width: 280px;
+    }
+
+    .culture>.grid>.grid-1>.main-info {
+        margin-top: 30px;
+        font-weight: 300;
+        opacity: 80%;
+        color: white;
+        width: auto;
+        text-align: justify;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .culture>.grid {
+        padding-top: 200px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2em;
+    }
+
+    .culture>.grid>.grid-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .culture>.grid>.grid-1>.top-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+
+    .culture>.grid>.grid-1>.circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .culture>.grid>.grid-1>.top-info>.wayang {
+        padding: 0;
+        width: 240px;
+    }
+
+    .culture>.grid>.grid-1>.top-info>.title {
+        margin: 40px 0 0 0;
+    }
+
+    .culture>.grid>.grid-1>.top-info>.title>.cult-name {
+        color: #F0DF99;
+        font-size: 10vw;
+    }
+
+    .culture>.grid>.grid-1>.top-info>.title>.year {
+        color: white;
+        font-size: 8vw;
+    }
+
+    .culture>.grid>.grid-1>.main-info {
+        margin-top: 20vh;
+        font-weight: 300;
+        opacity: 80%;
+        color: white;
+        width: auto;
+        text-align: justify;
+    }
+}

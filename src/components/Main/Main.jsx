@@ -2,7 +2,8 @@ import React from 'react'
 import Discover from './Discover/Discover';
 import Explore from './Explore/Explore';
 import Destination from './Destination/Destination';
-import FunFact from '../FunFact/FunFact';
+import FunFact from './FunFact/FunFact';
+import CultureHeritage from './CultureHeritage/CultureHeritage';
 
 const Main = () => {
     return (
@@ -11,6 +12,7 @@ const Main = () => {
             <Explore />
             <Destination />
             <FunFact />
+            <CultureHeritage />
         </main>
     )
 }
