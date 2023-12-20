@@ -1,0 +1,159 @@
+.container {
+    display: flex;
+    margin-top: 80px;
+    position: relative;
+    flex-direction: column;
+    align-items: end;
+}
+
+.container>.top-info {
+    display: flex;
+    position: absolute;
+    flex-direction: row-reverse;
+    right: -2vw;
+    top: -7vw;
+}
+
+.container>.main-info {
+    margin-top: 30px;
+    font-weight: 300;
+    opacity: 80%;
+    color: white;
+    width: auto;
+    text-align: justify;
+}
+
+.container>.circle {
+    width: 19vw;
+    height: 19vw;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgba(103, 46, 28, 100), rgba(26, 116, 142, 0))
+}
+
+.container>.top-info>.wayang {
+    width: 17vw;
+}
+
+.container>.top-info>.title {
+    margin-right: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+}
+
+.container>.top-info>.title>.cult-name {
+    color: #F0DF99;
+    font-size: 4vw;
+}
+
+.container>.top-info>.title>.year {
+    color: white;
+    font-size: 2vw;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container>.top-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+
+    .container>.circle {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .container>.top-info>.wayang {
+        padding: 0;
+        width: 40vw;
+    }
+
+    .container>.top-info>.title {
+        margin: 40px 0 0 0;
+    }
+
+    .container>.top-info>.title>.cult-name {
+        color: #F0DF99;
+        font-size: 10vw;
+    }
+
+    .container>.top-info>.title>.year {
+        color: white;
+        font-size: 8vw;
+    }
+
+    .container>.main-info {
+        margin-top: 20vh;
+        font-weight: 300;
+        opacity: 80%;
+        color: white;
+        width: auto;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 390px) {
+    .container {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container>.top-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+
+    .container>.circle {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .container>.top-info>.wayang {
+        padding: 0;
+        width: 40vw;
+    }
+
+    .container>.top-info>.title {
+        margin: 40px 0 0 0;
+    }
+
+    .container>.top-info>.title>.cult-name {
+        color: #F0DF99;
+        font-size: 10vw;
+    }
+
+    .container>.top-info>.title>.year {
+        color: white;
+        font-size: 8vw;
+    }
+
+    .container>.main-info {
+        margin-top: 25vh;
+        font-weight: 300;
+        opacity: 80%;
+        color: white;
+        width: auto;
+        text-align: justify;
+        font-size: small;
+    }
+}
