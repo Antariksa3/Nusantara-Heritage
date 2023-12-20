@@ -1,39 +1,59 @@
-.section-one {
+.news-flash {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 64px;
 }
 
-.section-one>.image {
-    width: 38em;
+.news-flash-image {
+    width: 50%;
+}
+
+.news-flash-image img {
+    width: 100%;
     height: 20em;
     border-radius: 10px;
-    margin-right: 33px;
-    background: url('/src/assets/images/discover/discover-background-ori.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.section-one>.news-flash {
-    width: 62vw;
-    height: 20vw;
-    margin-bottom: 110px;
+.news-flash-content {
+    width: 50%;
+    height: auto;
+    padding-left: 32px;
 }
 
-.section-one>.news-flash>.title {
-    color: white;
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 18px;
+.news-flash-content h3 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 16px;
 }
 
-.section-one>.news-flash {
-    width: 62vw;
-    height: 20vw;
+.news-flash-content p {
+    text-align: justify;
 }
 
-@media (max-width: 1280px) {}
+@media screen and (max-width: 1280px) {}
 
-@media (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .news-flash {
+        margin-bottom: 48px;
+    }
 
-@media (max-width: 768px) {}
+    .news-flash-content {
+        padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-flash {
+        display: block;
+    }
+
+    .news-flash-image {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .news-flash-content {
+        width: 100%;
+        padding: 0;
+    }
+}

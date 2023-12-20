@@ -18,12 +18,6 @@
     width: 100%;
 }
 
-.discover-heading h1,
-h2,
-p {
-    color: white;
-}
-
 .discover-heading h2 {
     font-size: 3.75em;
 }
@@ -40,7 +34,7 @@ p {
     margin: 8px 0 24px 0;
 }
 
-.discover-heading button {
+.discover-heading a {
     background-color: white;
     color: black;
     border: none;
@@ -52,7 +46,7 @@ p {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.discover-heading button:hover {
+.discover-heading a:hover {
     background-color: black;
     color: white;
 }
@@ -166,7 +160,21 @@ p {
     }
 }
 
+@media screen and (max-width: 676px) {
+    .discover {
+        padding: 0 48px;
+    }
+}
+
 @media screen and (max-width: 576px) {
+    .discover {
+        padding: 0 40px;
+    }
+
+    .discover-heading {
+        width: 80%;
+    }
+
     .discover-heading h1 {
         font-size: 3em;
     }
@@ -177,7 +185,6 @@ p {
 
     .discover-heading p {
         font-size: 1em;
-        width: 50%;
     }
 
     .discover-heading button {
@@ -186,7 +193,19 @@ p {
     }
 
     .discover-carousel {
-        width: 70%;
+        width: 85%;
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    .discover-carousel {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 496px) {
+    .discover-carousel {
+        width: 60%;
     }
 }

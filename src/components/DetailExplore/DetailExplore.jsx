@@ -5,8 +5,8 @@ import './DetailExplore.css'
 
 const DetailExplore = () => {
     return (
-        <main className="detail">
-            <p className="province-name">Jawa Barat</p>
+        <main className="detail-explore">
+            <h2>Jawa Barat</h2>
             <NewsFlash />
             <Summary />
             <AdditionalInfo />

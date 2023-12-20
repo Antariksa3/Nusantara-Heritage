@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as ScrollLink } from 'react-scroll'
 import './Footer.css';
 import footerlogo from '../../assets/images/footer/footerlogo.png';
 
@@ -7,17 +8,20 @@ const Footer = () => {
     <footer>
       <div className="footer">
         <div className="footer-content">
-          <a href="#" className="footer-logo" >
+          <ScrollLink to="discover" spy={true} smooth={true} duration={500} className='footer-logo'>
             <img src={footerlogo} alt="" />
             <h4>NUSANTARA HERITAGE</h4>
-          </a>
+          </ScrollLink>
           <div className="footer-menu">
             <h5 className="footer-title">
               Eksplorasi
             </h5>
             <ul className="footer-links">
               <li>
-                <a href="#" className='footer-link'>Wisata</a>
+                <ScrollLink to="explore" spy={true} smooth={true} offset={20} duration={500} className='footer-link'>Provinsi</ScrollLink>
+              </li>
+              <li>
+                <ScrollLink to="destination" spy={true} smooth={true} offset={-40} duration={500} className='footer-link'>Wisata</ScrollLink>
               </li>
               <li>
                 <a href="#" className='footer-link'>Kuliner</a>
@@ -54,7 +58,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div class="footer-copy">
+        <div className="footer-copy">
           &#169; 2023 Indonesia | Meng Gundud Team
         </div>
       </div>

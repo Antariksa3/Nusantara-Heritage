@@ -32,7 +32,7 @@
     font-size: 1.25em;
 }
 
-@media (max-width: 964px) {
+@media screen and (max-width: 964px) {
     .destination-card {
         height: 240px;
         width: 180px;
@@ -43,7 +43,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .destination-card {
         height: 200px;
         width: 140px;

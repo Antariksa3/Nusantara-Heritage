@@ -18,6 +18,13 @@
     font-weight: bold;
     font-size: 1.2em;
     color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.web-name img {
+    margin-right: 10px;
 }
 
 .header>.menu {
@@ -36,6 +43,7 @@
 }
 
 .header>.nav-a>a {
+    cursor: pointer;
     text-decoration: none;
     color: white;
     padding: 0 20px 2px 20px;
@@ -64,7 +72,7 @@
     position: absolute;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .web-name {
         padding: 32px 0 32px 80px;
         font-weight: bold;

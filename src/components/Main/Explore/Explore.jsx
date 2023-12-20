@@ -6,7 +6,7 @@ import ExploreInfo from "./ExploreInfo/ExploreInfo";
 
 const Explore = () => {
     return (
-        <div className="explore">
+        <div className="explore" id="explore">
             <div className="explore-content">
                 <div className="explore-heading">
                     <h3>Eksplorasi 38 Provinsi di Nusantara</h3>

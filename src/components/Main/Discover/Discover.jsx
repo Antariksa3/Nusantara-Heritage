@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules'
+import { Link as ScrollLink } from "react-scroll";
 
 import './Discover.css'
 import 'swiper/css'
@@ -16,13 +17,14 @@ import slide1 from '../../../assets/images/discover/discover-slide-1.jpg'
 
 const Discover = () => {
     return (
-        <div className="discover">
+        <div className="discover" id="discover">
             <div className="discover-content">
                 <div className="discover-heading">
                     <h2>Discover</h2>
                     <h1>Indonesia</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quae impedit ullam esse dolor necessitatibus minima atque. Itaque, deleniti ducimus?</p>
-                    <button>Explore More</button>
+                    <ScrollLink to="explore" spy={true} smooth={true} offset={-40} duration={500}>Explore More</ScrollLink>
+
                 </div>
                 <div className="discover-carousel">
                     <Swiper
