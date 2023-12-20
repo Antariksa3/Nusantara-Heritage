@@ -1,12 +1,28 @@
-.detail {
+.detail-explore {
     padding: 120px 80px 0 80px;
     height: max-content;
     background-color: #153C5D;
 }
 
-.detail>.province-name {
-    color: white;
+.detail-explore h2 {
     font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 76px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+@media screen and (max-width: 768px) {
+    .detail-explore {
+        padding: 100px 40px;
+    }
+
+    .detail-explore h2 {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .detail-explore {
+        padding: 100px 20px;
+    }
+
 }

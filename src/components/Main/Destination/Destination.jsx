@@ -4,7 +4,7 @@ import DestinationCard from './DestinationCard/DestinationCard'
 
 const Destination = () => {
     return (
-        <div className="destination">
+        <div className="destination" id='destination'>
             <div className="destination-content">
                 <div className="destination-heading">
                     <h3>Destinasi Wisata</h3>

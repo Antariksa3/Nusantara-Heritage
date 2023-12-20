@@ -8,7 +8,6 @@
 }
 
 .glass-info h5 {
-    color: white;
     font-size: 1.25em;
     margin-bottom: 12px;
 }
@@ -19,7 +18,10 @@
     font-weight: 300;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .glass-info {
+        width: auto;
+    }
 
     .glass-info h5 {
         font-size: 1em;
@@ -27,5 +29,16 @@
 
     .glass-info p {
         font-size: 0.75em;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .glass-info h5 {
+        font-size: 0.9em;
+    }
+
+    .glass-info p {
+        font-size: 0.7em;
     }
 }

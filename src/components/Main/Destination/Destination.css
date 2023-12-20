@@ -28,7 +28,6 @@
 }
 
 .destination-heading h3 {
-    color: white;
     font-size: 2.5em;
 }
 
@@ -38,31 +37,31 @@
     grid-gap: 16px;
 }
 
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .destination-cards {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .destination-cards {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .destination-cards {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (max-width: 684px) {
+@media screen and (max-width: 684px) {
     .destination {
         padding: 0 60px 40px;
     }
 }
 
-@media (max-width: 584px) {
+@media screen and (max-width: 584px) {
     .destination-cards {
         grid-template-columns: repeat(2, 1fr);
     }
