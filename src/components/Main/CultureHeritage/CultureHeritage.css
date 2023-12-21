@@ -1,0 +1,41 @@
+.culture {
+    position: relative;
+    background-color: #153C5D;
+    padding: 0 120px 80px;
+}
+
+.culture>.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.culture>.heading>h3 {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    position: absolute;
+}
+
+.culture>.grid {
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em;
+}
+
+@media (max-width: 768px) {
+
+    .culture {
+        position: relative;
+        background-color: #153C5D;
+        padding: 80px;
+    }
+
+    .culture>.grid {
+        padding: 120px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5em;
+    }
+}
