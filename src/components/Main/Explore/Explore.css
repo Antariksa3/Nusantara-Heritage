@@ -24,10 +24,14 @@
     border-radius: 16px;
 }
 
-.indonesian-map {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    transform: scale(1.1);
+@media screen and (max-width: 1024px) {
+    .explore-map-frame {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .explore-map-frame {
+        padding: 10px;
+    }
 }

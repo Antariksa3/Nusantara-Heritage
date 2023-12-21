@@ -33,7 +33,7 @@ const Header = () => {
             <div className={`menu ${showSidebar && 'active'}`} onClick={handleShowSidebar}>=</div>
             <div className={`close-btn ${showSidebar && 'active'}`} onClick={handleShowSidebar}>x</div>
             <nav className={`nav-a ${showSidebar && 'active'}`}>
-                <ScrollLink to="explore" spy={true} smooth={true} offset={30} duration={500}>Provinsi</ScrollLink>
+                <ScrollLink to="explore" spy={true} smooth={true} offset={-20} duration={500}>Provinsi</ScrollLink>
                 <ScrollLink to="destination" spy={true} smooth={true} offset={-40} duration={500}>Wisata</ScrollLink>
                 <NavLink to={""}>Kuliner</NavLink>
                 <NavLink to={""}>Kebudayaan</NavLink>

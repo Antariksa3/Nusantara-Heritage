@@ -1,0 +1,46 @@
+.funfact-card {
+    display: flex;
+    flex-direction: column;
+    width: 432px;
+    height: 260px;
+    border-radius: 16px;
+    border: 1px solid rgba(254, 255, 200, 0.40);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
+    background: linear-gradient(163deg, #5B2319 15%, #D38E31 85%);
+    backdrop-filter: blur(20px);
+    position: relative;
+}
+
+.funfact-quote {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.fa-quote-left {
+    font-size: 3em;
+}
+
+.funfact-card h5 {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 20px 60px;
+    flex: 1;
+}
+
+.funfact-image {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.funfact-bunga {
+    width: 50%;
+}
+
+.funfact-wayang {
+    width: 30%;
+}
