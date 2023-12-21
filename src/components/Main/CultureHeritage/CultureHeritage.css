@@ -25,17 +25,16 @@
 }
 
 @media (max-width: 768px) {
-
     .culture {
         position: relative;
         background-color: #153C5D;
-        padding: 80px;
+        padding: 0 2rem 2rem;
     }
 
     .culture>.grid {
         padding: 120px 0 0 0;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 5em;
+        grid-gap: 2em;
     }
 }

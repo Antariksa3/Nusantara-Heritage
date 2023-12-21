@@ -1,4 +1,5 @@
 .content {
+    margin-top: 60px;
     position: relative;
 }
 
@@ -49,7 +50,6 @@
 
 @media (max-width: 768px) {
     .content {
-        margin-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -101,7 +101,7 @@
 
 @media (max-width: 390px) {
     .content {
-        margin-top: 60px;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -142,7 +142,8 @@
     }
 
     .content>.main-info {
-        margin-top: 25vh;
+        margin-top: 16vh;
+        margin-bottom: 10vh;
         font-weight: 300;
         opacity: 80%;
         color: white;
