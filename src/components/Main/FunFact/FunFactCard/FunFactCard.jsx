@@ -4,8 +4,8 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 
 import './FunFactCard.css'
 
-import funfactbunga from '../../../assets/images/funfact/funfact-bunga.png'
-import funfactwayang from '../../../assets/images/funfact/funfact-wayang.png'
+import funfactbunga from '../../../../assets/images/funfact/funfact-bunga.png'
+import funfactwayang from '../../../../assets/images/funfact/funfact-wayang.png'
 
 const FunFactCard = (props) => {
     return (
