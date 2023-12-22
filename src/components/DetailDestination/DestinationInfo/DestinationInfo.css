@@ -1,0 +1,117 @@
+.detail-destination {}
+
+.detail-destination-heading {
+    position: relative;
+}
+
+.detail-destination-heading img {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+    margin: 0;
+}
+
+.detail-destination-heading h1 {
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.detail-destination-content {
+    background: #153C5D;
+    padding: 80px 120px;
+}
+
+.detail-desc,
+.detail-history,
+.detail-attraction {
+    margin-bottom: 32px;
+}
+
+.detail-destination-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 16px;
+}
+
+.detail-destination-content p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1280px) {
+    .detail-destination-heading h1 {
+        font-size: 2.5em;
+    }
+
+    .detail-destination-content {
+        padding: 60px 80px;
+    }
+
+    .detail-destination-content h2 {
+        font-size: 2.2em;
+        margin-bottom: 12px;
+    }
+
+    .detail-destination-content p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .detail-destination-heading h1 {
+        font-size: 2em;
+    }
+
+    .detail-destination-content {
+        padding: 40px 60px;
+    }
+
+    .detail-destination-content h2 {
+        font-size: 2em;
+        margin-bottom: 12px;
+    }
+
+    .detail-destination-content p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .detail-destination-heading h1 {
+        font-size: 1.8em;
+    }
+
+    .detail-destination-content {
+        padding: 30px 40px;
+    }
+
+    .detail-destination-content h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .detail-destination-content p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .detail-destination-heading h1 {
+        font-size: 1.5em;
+    }
+
+    .detail-destination-content {
+        padding: 20px 30px;
+    }
+
+    .detail-destination-content h2 {
+        font-size: 1.5em;
+        margin-bottom: 8px;
+    }
+
+    .detail-destination-content p {
+        font-size: 0.8em;
+    }
+}

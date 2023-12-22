@@ -8,6 +8,7 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
 .culinary-card img {
