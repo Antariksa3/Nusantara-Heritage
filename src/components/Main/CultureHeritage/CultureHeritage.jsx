@@ -8,7 +8,7 @@ import GridRight from './RightContent/RightContent'
 
 const CultureHeritage = () => {
     return (
-        <div className="culture">
+        <div className="culture" id="culture">
             <div className="heading">
                 <img src={HeaderImage}></img>
                 <h3>Kebudayaan di Indonesia</h3>

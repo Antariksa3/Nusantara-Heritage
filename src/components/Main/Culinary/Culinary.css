@@ -1,0 +1,101 @@
+.culinary {
+    background: #153C5D;
+    padding: 0 120px 60px;
+}
+
+.culinary-heading {
+    margin-bottom: 32px;
+}
+
+.culinary-heading h3 {
+    font-size: 2.5em;
+}
+
+.culinary-display {
+    display: flex;
+    aspect-ratio: 2/1;
+    margin-bottom: 16px;
+}
+
+.culinary-display img {
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.culinary-display-text {
+    background: #10314D;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.culinary-display-text h4 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+.culinary-display-text p {
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .culinary {
+        padding: 0 60px 40px;
+    }
+
+    .culinary-display-text h4 {
+        font-size: 1.75em;
+    }
+
+    .culinary-display-text p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .culinary {
+        padding: 0 40px 40px;
+    }
+
+    .culinary-display-text h4 {
+        font-size: 1.5em;
+        margin-bottom: 6px;
+    }
+
+    .culinary-display-text p {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 432px) {
+
+    .culinary-display {
+        display: block;
+    }
+
+    .culinary-display img {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .culinary-display-text {
+        width: 100%;
+        max-width: fit-content;
+        padding: 8px;
+    }
+
+    .culinary-display-text h4 {
+        font-size: 1.25em;
+    }
+
+    .culinary-display-text p {
+        font-size: .8em;
+    }
+}

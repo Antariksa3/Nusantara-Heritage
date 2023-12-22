@@ -34,9 +34,10 @@ const Header = () => {
             <div className={`close-btn ${showSidebar && 'active'}`} onClick={handleShowSidebar}>x</div>
             <nav className={`nav-a ${showSidebar && 'active'}`}>
                 <ScrollLink to="explore" spy={true} smooth={true} offset={-20} duration={500}>Provinsi</ScrollLink>
-                <ScrollLink to="destination" spy={true} smooth={true} offset={-40} duration={500}>Wisata</ScrollLink>
-                <NavLink to={""}>Kuliner</NavLink>
-                <NavLink to={""}>Kebudayaan</NavLink>
+                <ScrollLink to="destination" spy={true} smooth={true} offset={-60} duration={500}>Wisata</ScrollLink>
+                <ScrollLink to="culinary" spy={true} smooth={true} offset={-120} duration={500}>Kuliner</ScrollLink>
+                <ScrollLink to="culture" spy={true} smooth={true} offset={-120} duration={500}>Kebudayaan</ScrollLink>
+                {/* <NavLink to={""}>Kebudayaan</NavLink> */}
                 <NavLink to={""}>Bahasa</NavLink>
             </nav>
         </header>

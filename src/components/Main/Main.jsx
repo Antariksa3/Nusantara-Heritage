@@ -4,6 +4,7 @@ import Explore from './Explore/Explore';
 import Destination from './Destination/Destination';
 import FunFact from './FunFact/FunFact';
 import CultureHeritage from './CultureHeritage/CultureHeritage';
+import Culinary from './Culinary/Culinary';
 
 const Main = () => {
     return (
@@ -12,6 +13,7 @@ const Main = () => {
             <Explore />
             <Destination />
             <FunFact />
+            <Culinary />
             <CultureHeritage />
         </main>
     )

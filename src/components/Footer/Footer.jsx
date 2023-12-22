@@ -21,13 +21,13 @@ const Footer = () => {
                 <ScrollLink to="explore" spy={true} smooth={true} offset={20} duration={500} className='footer-link'>Provinsi</ScrollLink>
               </li>
               <li>
-                <ScrollLink to="destination" spy={true} smooth={true} offset={-40} duration={500} className='footer-link'>Wisata</ScrollLink>
+                <ScrollLink to="destination" spy={true} smooth={true} offset={-60} duration={500} className='footer-link'>Wisata</ScrollLink>
               </li>
               <li>
-                <a href="#" className='footer-link'>Kuliner</a>
+                <ScrollLink to="culinary" spy={true} smooth={true} offset={-120} duration={500} className='footer-link'>Kuliner</ScrollLink>
               </li>
               <li>
-                <a href="#" className='footer-link'>Kebudayaan</a>
+                <ScrollLink to="culinary" spy={true} smooth={true} offset={-40} duration={500} className='footer-link'>Kebudayaan</ScrollLink>
               </li>
             </ul>
           </div>
@@ -50,10 +50,10 @@ const Footer = () => {
             </h5>
             <ul className="footer-links">
               <li>
-                <a href="#" className='footer-link'>Rekomendasi Wisata</a>
+                <ScrollLink to="destination" spy={true} smooth={true} offset={-60} duration={500} className='footer-link'>Rekomendasi Wisata</ScrollLink>
               </li>
               <li>
-                <a href="#" className='footer-link'>Rekomendasi Kuliner</a>
+                <ScrollLink to="culinary" spy={true} smooth={true} offset={-120} duration={500} className='footer-link'>Rekomendasi Kuliner</ScrollLink>
               </li>
             </ul>
           </div>
