@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Destination.css'
 import DestinationCard from './DestinationCard/DestinationCard'
+import { getDestination } from '../../../api/api'
 
 const Destination = () => {
+    const [destinations, setDestination] = useState([])
+
+    useEffect(() => {
+        getDestination().then((destination) => {
+            // console.log(destination)
+            setDestination(destination)
+        })
+    }, [])
+
+    const DestinationList = () => {
+        return destinations.map((destination, i) => (
+            <DestinationCard
+                key={i}
+                name={destination.name}
+                image={destination.image}
+            />
+        ))
+    }
     return (
         <div className="destination" id='destination'>
             <div className="destination-content">
@@ -10,16 +29,7 @@ const Destination = () => {
                     <h3>Destinasi Wisata</h3>
                 </div>
                 <div className="destination-cards">
-                    <DestinationCard />
-                    <DestinationCard />
-                    <DestinationCard />
-                    <DestinationCard />
-                    <DestinationCard />
-                    <DestinationCard />
-                    <DestinationCard />
-                    <DestinationCard />
-                    <DestinationCard />
-                    <DestinationCard />
+                    <DestinationList />
                 </div>
             </div>
         </div>

@@ -37,29 +37,29 @@ const Culinary = () => {
                             disableOnInteraction: false,
                         }}
                         breakpoints={{
-                            1440: {
-                                slidesPerView: 5,
-                                spaceBetween: 20,
+                            430: {
+                                slidesPerView: 1.5,
+                                // spaceBetween: 60,
                             },
-                            1280: {
-                                slidesPerView: 4.5,
+                            576: {
+                                slidesPerView: 2,
+                                spaceBetween: 10,
+                            },
+                            768: {
+                                slidesPerView: 2.75,
                                 spaceBetween: 20,
                             },
                             1024: {
                                 slidesPerView: 3.5,
                                 spaceBetween: 40,
                             },
-                            768: {
-                                slidesPerView: 2.75,
+                            1280: {
+                                slidesPerView: 4.5,
                                 spaceBetween: 20,
                             },
-                            576: {
-                                slidesPerView: 2,
-                                spaceBetween: 10,
-                            },
-                            430: {
-                                slidesPerView: 1.5,
-                                // spaceBetween: 60,
+                            1440: {
+                                slidesPerView: 5,
+                                spaceBetween: 20,
                             },
                         }}
                         modules={[Autoplay]}

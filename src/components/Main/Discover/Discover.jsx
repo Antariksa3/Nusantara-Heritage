@@ -24,7 +24,6 @@ const Discover = () => {
                     <h1>Indonesia</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quae impedit ullam esse dolor necessitatibus minima atque. Itaque, deleniti ducimus?</p>
                     <ScrollLink to="explore" spy={true} smooth={true} offset={-40} duration={500}>Explore More</ScrollLink>
-
                 </div>
                 <div className="discover-carousel">
                     <Swiper

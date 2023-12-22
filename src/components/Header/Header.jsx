@@ -4,7 +4,6 @@ import { Link as ScrollLink } from 'react-scroll'
 import { NavLink } from 'react-router-dom'
 import headerlogo from '../../assets/images/footer/footerlogo.png';
 
-
 const Header = () => {
 
     const [showSidebar, setShowSidebar] = useState(false)

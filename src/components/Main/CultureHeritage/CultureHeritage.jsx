@@ -5,6 +5,7 @@ import './CultureHeritage.css';
 import HeaderImage from '../../../assets/images/culture/heading-bg.svg';
 import GridLeft from './LeftContent/LeftContent'
 import GridRight from './RightContent/RightContent'
+import ProvinceList from "./ProvinceList/ProvinceList";
 
 const CultureHeritage = () => {
     return (
@@ -20,6 +21,7 @@ const CultureHeritage = () => {
                 <GridRight />
                 <GridLeft />
             </div>
+            <ProvinceList />
         </div>
     )
 }

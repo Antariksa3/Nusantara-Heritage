@@ -2,13 +2,13 @@ import React from 'react'
 import './DestinationCard.css'
 import destinationImage from '../../../../assets/images/destination/destination-image-1.png'
 
-const DestinationCard = () => {
+const DestinationCard = (props) => {
     return (
         <div className="destination-card">
-            <img src={destinationImage} alt="Destination" />
+            <img src={props.image} alt="Destination" />
             <div className="destination-text">
                 <p>
-                    Candi Borobudur
+                    {props.name}
                 </p>
             </div>
         </div>
