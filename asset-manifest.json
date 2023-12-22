@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/nusantara-heritage/static/css/main.b9fc4fae.css",
+    "main.js": "/nusantara-heritage/static/js/main.0f9ec45f.js",
+    "static/media/discover-background-ori.png": "/nusantara-heritage/static/media/discover-background-ori.307e93f043fa72a7e4cd.png",
+    "static/media/detail-destination-1.jpg": "/nusantara-heritage/static/media/detail-destination-1.b2af8a0dc48813fa8d9d.jpg",
+    "static/media/heading-bg.svg": "/nusantara-heritage/static/media/heading-bg.0a43e083b7cec553a957ce7805abdee0.svg",
+    "static/media/base.svg": "/nusantara-heritage/static/media/base.c8c3ac021ae3c2899760.svg",
+    "static/media/wayang.svg": "/nusantara-heritage/static/media/wayang.2a2f43eebbce3a982b9809ff2c9cd044.svg",
+    "static/media/discover-slide-1.jpg": "/nusantara-heritage/static/media/discover-slide-1.f6e0627f949613785820.jpg",
+    "static/media/culinary-1.jpg": "/nusantara-heritage/static/media/culinary-1.259c588b470cd1e888c9.jpg",
+    "static/media/discover-cloud-2.png": "/nusantara-heritage/static/media/discover-cloud-2.cead3c4c10ad9a12e182.png",
+    "static/media/discover-cloud-1.png": "/nusantara-heritage/static/media/discover-cloud-1.93ab4b7c318c7b82fcb3.png",
+    "static/media/destination-image-1.png": "/nusantara-heritage/static/media/destination-image-1.9a159b9778e4c3c80e4b.png",
+    "static/media/footer3.png": "/nusantara-heritage/static/media/footer3.c236ec2389a67b0297c4.png",
+    "static/media/footer4.png": "/nusantara-heritage/static/media/footer4.807e13012a4982495d18.png",
+    "static/media/footer1.png": "/nusantara-heritage/static/media/footer1.0088aa46dd05c9496a1e.png",
+    "static/media/discover-cloud-3.png": "/nusantara-heritage/static/media/discover-cloud-3.815121de75e24014350d.png",
+    "static/media/funfact-bunga.png": "/nusantara-heritage/static/media/funfact-bunga.bbe0a89ffd68941dce14.png",
+    "static/media/funfact-wayang.png": "/nusantara-heritage/static/media/funfact-wayang.1640adbbd4456dff3738.png",
+    "index.html": "/nusantara-heritage/index.html",
+    "main.b9fc4fae.css.map": "/nusantara-heritage/static/css/main.b9fc4fae.css.map",
+    "main.0f9ec45f.js.map": "/nusantara-heritage/static/js/main.0f9ec45f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9fc4fae.css",
+    "static/js/main.0f9ec45f.js"
+  ]
+}
