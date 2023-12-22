@@ -47,7 +47,8 @@
     text-decoration: none;
     color: white;
     padding: 0 20px 2px 20px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     background-image: linear-gradient(white 0 0);
     background-position: 0 100%;
     background-size: 0% 2px;
@@ -74,7 +75,7 @@
 
 @media screen and (max-width: 768px) {
     .web-name {
-        padding: 32px 0 32px 80px;
+        padding: 32px 40px;
         font-weight: bold;
         font-size: 1em;
     }
@@ -85,7 +86,7 @@
     }
 
     .header>.menu {
-        padding: 32px 80px;
+        padding: 32px 40px;
         font-weight: bold;
         font-size: 1em;
         color: white;
@@ -102,7 +103,7 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
         transition: all 0.3s ease-out;
     }
 
