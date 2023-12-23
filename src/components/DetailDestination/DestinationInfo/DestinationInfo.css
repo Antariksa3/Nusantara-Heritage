@@ -26,6 +26,7 @@
 
 .detail-desc,
 .detail-history,
+.detail-interest,
 .detail-attraction {
     margin-bottom: 32px;
 }
@@ -98,6 +99,10 @@
 }
 
 @media screen and (max-width: 576px) {
+    .detail-destination-heading img {
+        height: 40vw;
+    }
+
     .detail-destination-heading h1 {
         font-size: 1.5em;
     }
@@ -113,5 +118,11 @@
 
     .detail-destination-content p {
         font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .detail-destination-heading img {
+        height: 50vw;
     }
 }

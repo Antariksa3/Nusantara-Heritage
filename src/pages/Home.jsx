@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header/Header'
 import Main from '../components/Main/Main'
 import Footer from '../components/Footer/Footer'
+import ScrollUp from '../components/ScrollUp/ScrollUp'
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
             <Header />
             <Main />
             <Footer />
+            <ScrollUp to='discover' />
         </div>
     )
 }

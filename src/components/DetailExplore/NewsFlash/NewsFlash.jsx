@@ -6,7 +6,7 @@ const NewsFlash = (props) => {
     return (
         <div className="news-flash">
             <div className="news-flash-image">
-                <img src={DetailImage} alt="" />
+                <img src={props.banner} alt="" />
             </div>
             <div className="news-flash-content">
                 <h3>

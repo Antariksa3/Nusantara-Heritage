@@ -15,17 +15,22 @@ const Summary = (props) => {
                     </li>
                     <li>
                         <h4>
+                            Terletak di Pulau: {props.island}
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
                             Etnik: {props.ethnic}
                         </h4>
                     </li>
                     <li>
                         <h4>
-                            Terletak di Kepulauan: {props.island}
+                            Bahasa Daerah: {props.local_language}
                         </h4>
                     </li>
                     <li>
                         <h4>
-                            Bahasa Daerah: {props.local_language}
+                            Jumlah Populasi: {props.population} Jiwa
                         </h4>
                     </li>
                 </ul>
@@ -34,7 +39,7 @@ const Summary = (props) => {
                 <div className="summary-left">
                     <div className="summary-content">
                         <h4>{props.dance}</h4>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words . It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</p>
+                        <p>{props.dance_desc}</p>
                     </div>
                     <div className="summary-image">
                         <img src={props.dance_image} alt="" />
@@ -43,7 +48,7 @@ const Summary = (props) => {
                 <div className="summary-right">
                     <div className="summary-content">
                         <h4>{props.house}</h4>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words . It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</p>
+                        <p>{props.house_desc}</p>
                     </div>
                     <div className="summary-image">
                         <img src={props.house_image} alt="" />
@@ -52,7 +57,7 @@ const Summary = (props) => {
                 <div className="summary-left">
                     <div className="summary-content">
                         <h4>{props.music}</h4>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words . It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</p>
+                        <p>{props.music_desc}</p>
                     </div>
                     <div className="summary-image">
                         <img src={props.music_image} alt="" />
@@ -61,7 +66,7 @@ const Summary = (props) => {
                 <div className="summary-right">
                     <div className="summary-content">
                         <h4>{props.weapon}</h4>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words . It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</p>
+                        <p>{props.weapon_desc}</p>
                     </div>
                     <div className="summary-image">
                         <img src={props.weapon_image} alt="" />

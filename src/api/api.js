@@ -2,10 +2,10 @@ import axios from "axios"
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
-export const getDestination = async () => {
-    const destinationList = await axios.get(`${apiUrl}/api/destination`)
-    // console.log({ destination: destinationList.data.data })
-    return destinationList.data.data
+export const getDiscover = async () => {
+    const discoverList = await axios.get(`${apiUrl}/api/carousel/discovery`)
+    // console.log({ discover: discoverList.data.data })
+    return discoverList.data.data
 }
 
 export const getProvince = async () => {
@@ -18,6 +18,12 @@ export const getDetailProvince = async (id) => {
     const detailProvinceList = await axios.get(`${apiUrl}/api/getprovince/detail/${id}`)
     // console.log({ detailProvince: detailProvinceList.data.data })
     return detailProvinceList.data.data
+}
+
+export const getDestination = async () => {
+    const destinationList = await axios.get(`${apiUrl}/api/destination`)
+    // console.log({ destination: destinationList.data.data })
+    return destinationList.data.data
 }
 
 export const getFunfact = async () => {

@@ -55,7 +55,7 @@
 
 @media (max-width: 1024px) {
     .container>.main-info {
-        margin-top: 10vh;
+        margin-top: 48px;
         font-weight: 300;
         opacity: 80%;
         color: white;
@@ -120,7 +120,7 @@
     }
 
     .container>.main-info {
-        margin-top: 14vh;
+        margin-top: 80px;
         font-weight: 300;
         opacity: 80%;
         color: white;
@@ -130,7 +130,7 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 432px) {
     .container {
         margin-top: 40px;
         display: flex;
@@ -173,7 +173,7 @@
     }
 
     .container>.main-info {
-        margin-top: 16vh;
+        margin-top: 12rem;
         font-weight: 300;
         opacity: 80%;
         color: white;

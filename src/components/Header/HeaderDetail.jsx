@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import './Header.css'
-import { Link as ScrollLink } from 'react-scroll'
+import { NavLink } from 'react-router-dom'
 import headerlogo from '../../assets/images/footer/footerlogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
-const Header = () => {
+const HeaderDetail = () => {
 
     const [showSidebar, setShowSidebar] = useState(false)
     const [addBackground, setAddBackground] = useState(false)
@@ -26,10 +26,10 @@ const Header = () => {
 
     return (
         <header className={`header ${addBackground && 'active'}`}>
-            <ScrollLink to="discover" spy={true} smooth={true} duration={500} className='web-name'>
+            <NavLink to='/' className='web-name'>
                 <img src={headerlogo} alt="" />
                 <h4>NUSANTARA HERITAGE</h4>
-            </ScrollLink>
+            </NavLink>
             <div className={`menu ${showSidebar && 'active'}`} onClick={handleShowSidebar}>
                 {showSidebar ? (
                     <FontAwesomeIcon icon={faXmark} />
@@ -37,14 +37,15 @@ const Header = () => {
                     <FontAwesomeIcon icon={faBars} />
                 )}
             </div>
+            {/* <div className={`close-btn ${showSidebar && 'active'}`} onClick={handleShowSidebar}>x</div> */}
             <nav className={`nav-a ${showSidebar && 'active'}`}>
-                <ScrollLink to="explore" spy={true} smooth={true} offset={-20} duration={500} onClick={handleShowSidebar}>Provinsi</ScrollLink>
-                <ScrollLink to="destination" spy={true} smooth={true} offset={-60} duration={500} onClick={handleShowSidebar}>Wisata</ScrollLink>
-                <ScrollLink to="culinary" spy={true} smooth={true} offset={-120} duration={500} onClick={handleShowSidebar}>Kuliner</ScrollLink>
-                <ScrollLink to="culture" spy={true} smooth={true} offset={-120} duration={500} onClick={handleShowSidebar}>Kebudayaan</ScrollLink>
+                <NavLink to='/' onClick={handleShowSidebar}>Provinsi</NavLink>
+                <NavLink to='/' onClick={handleShowSidebar}>Wisata</NavLink>
+                <NavLink to='/' onClick={handleShowSidebar}>Kuliner</NavLink>
+                <NavLink to='/' onClick={handleShowSidebar}>Kebudayaan</NavLink>
             </nav>
         </header>
     )
 }
 
-export default Header
+export default HeaderDetail

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../components/Header/Header'
 import DetailExplore from '../components/DetailExplore/DetailExplore'
-import Footer from '../components/Footer/Footer'
 import { useParams } from 'react-router-dom';
 import { getDetailProvince } from '../api/api';
+import HeaderDetail from '../components/Header/HeaderDetail';
+import FooterDetail from '../components/Footer/FooterDetail';
+import ScrollUp from '../components/ScrollUp/ScrollUp';
 
 const DetailProvince = () => {
     const { id } = useParams();
@@ -17,26 +18,33 @@ const DetailProvince = () => {
 
     return (
         <div>
-            <Header />
+            <HeaderDetail />
             {detailProv && (
                 <DetailExplore
                     prov_name={detailProv.province_name}
+                    banner={detailProv.banner}
                     flash_info={detailProv.flash_info}
                     dance={detailProv.dance}
+                    dance_desc={detailProv.dance_desc}
                     dance_image={detailProv.dance_image}
                     house={detailProv.regional_house}
+                    house_desc={detailProv.regional_house_desc}
                     house_image={detailProv.regional_house_image}
                     music={detailProv.music}
+                    music_desc={detailProv.music_desc}
                     music_image={detailProv.music_image}
                     weapon={detailProv.weapon}
+                    weapon_desc={detailProv.weapon_desc}
                     weapon_image={detailProv.weapon_image}
                     capital={detailProv.capital}
                     ethnic={detailProv.ethnic}
                     island={detailProv.island}
                     local_language={detailProv.local_language}
+                    population={detailProv.population}
                 />
             )}
-            <Footer />
+            <FooterDetail />
+            <ScrollUp to='detail-explore' />
         </div>
     )
 }

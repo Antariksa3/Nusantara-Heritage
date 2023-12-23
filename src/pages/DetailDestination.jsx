@@ -1,14 +1,16 @@
 import React from 'react'
-import Header from '../components/Header/Header'
 import DestinationPlace from '../components/DetailDestination/DestinationPlace'
-import Footer from '../components/Footer/Footer'
+import HeaderDetail from '../components/Header/HeaderDetail'
+import FooterDetail from '../components/Footer/FooterDetail'
+import ScrollUp from '../components/ScrollUp/ScrollUp'
 
 const DetailDestination = () => {
     return (
         <div>
-            <Header />
+            <HeaderDetail />
             <DestinationPlace />
-            <Footer />
+            <FooterDetail />
+            <ScrollUp to='detail-destination' />
         </div>
     )
 }

@@ -18,12 +18,11 @@
 }
 
 .culture>.grid {
-    padding-top: 60px;
+    padding-top: 120px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5em;
 }
-
 
 
 @media (max-width: 1024px) {

@@ -43,8 +43,8 @@
 
 @media screen and (max-width: 964px) {
     .destination-card {
-        height: 240px;
-        width: 180px;
+        height: 200px;
+        width: 140px;
     }
 
     .destination-text p {
@@ -55,12 +55,5 @@
 @media screen and (max-width: 768px) {
     .destination-text p {
         font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .destination-card {
-        height: 200px;
-        width: 160px;
     }
 }

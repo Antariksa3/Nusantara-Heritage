@@ -135,6 +135,10 @@
         max-width: fit-content;
     }
 
+    .discover-carousel img {
+        width: 120%;
+    }
+
     .carousel-item {
         padding: 16px;
     }
@@ -171,10 +175,14 @@
         bottom: -90px;
     }
 
-    /* .discover-clouds img {
+    .discover-carousel img {
+        width: 150%;
+    }
+
+    .discover-clouds img {
         width: 100%;
         height: auto;
-    } */
+    }
 
     .discover-clouds img:nth-child(1) {
         width: 160%;
@@ -220,10 +228,14 @@
         font-size: 0.8em;
     }
 
-    .discover-carousel {
+    .discover-carousel img {
         width: 80%;
+    }
+
+    .discover-carousel {
+        width: 100%;
         margin: 0 auto;
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .discover-clouds {

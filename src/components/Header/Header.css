@@ -21,6 +21,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .web-name img {
@@ -90,7 +91,8 @@
         font-weight: bold;
         font-size: 1em;
         color: white;
-        display: block;
+        display: flex;
+        align-items: center;
         cursor: pointer;
     }
 
@@ -98,7 +100,7 @@
         background: linear-gradient(to bottom, rgba(13, 3, 3, 20%), rgba(13, 3, 3, 100%));
         padding: 0;
         position: absolute;
-        top: 88px;
+        top: 104px;
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -107,9 +109,9 @@
         transition: all 0.3s ease-out;
     }
 
-    .header>.menu.active {
+    /* .header>.menu.active {
         display: none;
-    }
+    } */
 
     .header>.nav-a {
         display: none;

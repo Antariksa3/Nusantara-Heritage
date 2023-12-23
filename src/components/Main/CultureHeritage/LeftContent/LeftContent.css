@@ -51,7 +51,7 @@
 
 @media (max-width: 1024px) {
     .content>.main-info {
-        margin-top: 10vh;
+        margin-top: 48px;
         font-weight: 300;
         opacity: 80%;
         color: white;
@@ -115,7 +115,7 @@
     }
 
     .content>.main-info {
-        margin-top: 14vh;
+        margin-top: 80px;
         font-weight: 300;
         opacity: 80%;
         color: white;
@@ -125,7 +125,7 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 432px) {
     .content {
         margin-top: 40px;
         display: flex;
@@ -168,7 +168,7 @@
     }
 
     .content>.main-info {
-        margin-top: 16vh;
+        margin-top: 10rem;
         margin-bottom: 10vh;
         font-weight: 300;
         opacity: 80%;

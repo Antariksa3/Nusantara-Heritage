@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules'
 import { Link as ScrollLink } from "react-scroll";
@@ -14,8 +14,64 @@ import cloud1 from '../../../assets/images/discover/discover-cloud-1.png'
 import cloud2 from '../../../assets/images/discover/discover-cloud-2.png'
 import cloud3 from '../../../assets/images/discover/discover-cloud-3.png'
 import slide1 from '../../../assets/images/discover/discover-slide-1.jpg'
+import { getDiscover } from "../../../api/api";
 
 const Discover = () => {
+    const [discoveries, setDiscover] = useState([]);
+
+    useEffect(() => {
+        getDiscover().then((discover) => {
+            setDiscover(discover)
+        });
+    }, []);
+
+    const DiscoverList = () => {
+        return (
+            <Swiper
+                effect={'coverflow'}
+                grabCursor={true}
+                // centeredSlides={true}
+                loop={true}
+                slidesPerView={'auto'}
+                coverflowEffect={{
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2.5,
+                }}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                }}
+                breakpoints={{
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    676: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    // 1024: {
+                    //     slidesPerView: 4,
+                    //     spaceBetween: 50,
+                    // },
+                }}
+                pagination={true}
+                modules={[EffectCoverflow, Pagination, Autoplay]}
+                className="swiper_container"
+            >
+                {discoveries.map((discover, i) => (
+                    <SwiperSlide key={i}>
+                        <div className="carousel-item">
+                            <img src={discover} alt="" />
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        )
+    }
+
     return (
         <div className="discover" id="discover">
             <div className="discover-content">
@@ -27,82 +83,7 @@ const Discover = () => {
                     <ScrollLink to="explore" spy={true} smooth={true} offset={-40} duration={500}>Explore More</ScrollLink>
                 </div>
                 <div className="discover-carousel">
-                    <Swiper
-                        effect={'coverflow'}
-                        grabCursor={true}
-                        // centeredSlides={true}
-                        loop={true}
-                        slidesPerView={5}
-                        coverflowEffect={{
-                            rotate: 0,
-                            stretch: 0,
-                            depth: 100,
-                            modifier: 2.5,
-                        }}
-                        autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        }}
-                        breakpoints={{
-                            768: {
-                                slidesPerView: 3,
-                                spaceBetween: 40,
-                            },
-                            // 1024: {
-                            //     slidesPerView: 4,
-                            //     spaceBetween: 50,
-                            // },
-                        }}
-                        pagination={true}
-                        modules={[EffectCoverflow, Pagination, Autoplay]}
-                        className="swiper_container"
-                    >
-                        <SwiperSlide>
-                            <div className="carousel-item">
-                                <img src={slide1} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="carousel-item">
-                                <img src={slide1} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="carousel-item">
-                                <img src={slide1} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="carousel-item">
-                                <img src={slide1} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="carousel-item">
-                                <img src={slide1} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="carousel-item">
-                                <img src={slide1} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="carousel-item">
-                                <img src={slide1} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="carousel-item">
-                                <img src={slide1} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="carousel-item">
-                                <img src={slide1} alt="" />
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
+                    <DiscoverList />
                 </div>
             </div>
             <div className="discover-clouds">
