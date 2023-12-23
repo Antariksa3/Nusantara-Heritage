@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Destination.css'
 import DestinationCard from './DestinationCard/DestinationCard'
 import { getDestination } from '../../../api/api'
+import { Link } from 'react-router-dom'
 
 const Destination = () => {
     const [destinations, setDestination] = useState([])
@@ -15,11 +16,12 @@ const Destination = () => {
 
     const DestinationList = () => {
         return destinations.map((destination, i) => (
-            <DestinationCard
-                key={i}
-                name={destination.name}
-                image={destination.image}
-            />
+            <Link to={`/detaildestination/${destination.id}`} key={i}>
+                <DestinationCard
+                    name={destination.name}
+                    image={destination.image}
+                />
+            </Link>
         ))
     }
     return (

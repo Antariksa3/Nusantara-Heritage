@@ -29,7 +29,7 @@
 .discover-heading p {
     font-size: 1.5em;
     font-weight: 300;
-    width: 80%;
+    width: 90%;
     text-align: justify;
     margin: 8px 0 24px 0;
 }
@@ -172,7 +172,7 @@
     }
 
     .discover-heading {
-        width: 60%;
+        width: 80vw;
     }
 
     .discover-heading h1 {
@@ -185,6 +185,7 @@
 
     .discover-heading p {
         font-size: 1em;
+        width: 100%;
     }
 
     .discover-heading button {
@@ -207,5 +208,6 @@
 @media screen and (max-width: 496px) {
     .discover-carousel {
         width: 60%;
+        margin-top: 16px;
     }
 }

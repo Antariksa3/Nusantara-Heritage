@@ -22,7 +22,8 @@ const Discover = () => {
                 <div className="discover-heading">
                     <h2>Discover</h2>
                     <h1>Indonesia</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quae impedit ullam esse dolor necessitatibus minima atque. Itaque, deleniti ducimus?</p>
+                    {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quae impedit ullam esse dolor necessitatibus minima atque. Itaque, deleniti ducimus?</p> */}
+                    <p>Indonesia, dengan lebih dari 17.000 pulau, adalah rumah bagi keanekaragaman alam yang luar biasa. Mulai dari hutan hujan tropis yang lebat hingga gunung berapi yang megah, serta terumbu karang yang memikat di bawah lautnya, negara ini menawarkan keindahan alam yang tak terlupakan.</p>
                     <ScrollLink to="explore" spy={true} smooth={true} offset={-40} duration={500}>Explore More</ScrollLink>
                 </div>
                 <div className="discover-carousel">

@@ -21,10 +21,19 @@
 
 .destination-text {
     position: absolute;
-    bottom: 30px;
+    /* bottom: 30px; */
+    bottom: -100%;
     left: 0;
     width: 100%;
     text-align: center;
+    padding-bottom: 8px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    transition: bottom 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.destination-card:hover .destination-text {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    bottom: 0;
 }
 
 .destination-text p {

@@ -8,20 +8,26 @@ export const getDestination = async () => {
     return destinationList.data.data
 }
 
+export const getProvince = async () => {
+    const provinceList = await axios.get(`${apiUrl}/api/getprovince`)
+    // console.log({ detailProvince: provinceList.data.province })
+    return provinceList.data.province
+}
+
+export const getDetailProvince = async (id) => {
+    const detailProvinceList = await axios.get(`${apiUrl}/api/getprovince/detail/${id}`)
+    // console.log({ detailProvince: detailProvinceList.data.data })
+    return detailProvinceList.data.data
+}
+
 export const getFunfact = async () => {
     const funfactList = await axios.get(`${apiUrl}/api/funfact`)
     // console.log({ funfact: funfactList.data.data })
     return funfactList.data.data
 }
 
-export const getProvince = async () => {
-    const provinceList = await axios.get(`${apiUrl}/api/getprovince`)
-    console.log({ detailProvince: provinceList.data.province })
-    return provinceList.data.province
-}
-
-export const getDetailProvince = async (id) => {
-    const detailProvinceList = await axios.get(`${apiUrl}/api/getprovince/detail/${id}`)
-    console.log({ detailProvince: detailProvinceList.data.data })
-    return detailProvinceList.data.data
+export const getCulinary = async () => {
+    const culinaryList = await axios.get(`${apiUrl}/api/kuliner`)
+    // console.log({ culinary: culinaryList.data.data })
+    return culinaryList.data.data
 }
