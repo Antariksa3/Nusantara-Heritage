@@ -44,3 +44,66 @@
 .funfact-wayang {
     width: 30%;
 }
+
+@media (max-width: 1024px) {
+    .funfact-card {
+        width: 110%;
+    }
+}
+
+@media (max-width: 768px) {
+    .funfact-card {
+        width: 100%;
+    }
+
+    .funfact-quote {
+        padding-left: 20px;
+    }
+
+    .fa-quote-left {
+        font-size: 2em;
+    }
+
+    .funfact-card h5 {
+        font-size: 1.2em;
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .funfact-card {
+        height: 240px;
+    }
+
+    .funfact-quote {
+        padding-left: 15px;
+    }
+
+    .fa-quote-left {
+        font-size: 2em;
+    }
+
+    .funfact-card h5 {
+        font-size: 1em;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 432px) {
+    .funfact-card {
+        height: 180px;
+    }
+
+    .funfact-quote {
+        padding-left: 10px;
+    }
+
+    .fa-quote-left {
+        font-size: 1.5em;
+    }
+
+    .funfact-card h5 {
+        font-size: 0.8em;
+        padding: 10px 15px;
+    }
+}

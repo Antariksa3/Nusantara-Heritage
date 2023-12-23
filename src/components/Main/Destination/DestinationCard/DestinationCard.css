@@ -53,16 +53,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    .destination-card {
-        height: 200px;
-        width: 140px;
-    }
-
-    .destination-text {
-        bottom: 20px;
-    }
-
     .destination-text p {
         font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .destination-card {
+        height: 200px;
+        width: 160px;
     }
 }

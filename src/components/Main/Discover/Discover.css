@@ -9,13 +9,9 @@
 }
 
 .discover-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
     padding: 160px 0 48px 0;
-}
-
-.discover-heading {
-    width: 100%;
 }
 
 .discover-heading h2 {
@@ -77,14 +73,17 @@
 .discover-carousel {
     display: flex;
     align-items: center;
+    max-width: 40%;
 }
 
 .carousel-item {
-    padding: 32px;
+    /* padding: 32px; */
+    display: flex;
+    justify-content: center;
 }
 
 .discover-carousel img {
-    width: 100%;
+    width: 30em;
     height: auto;
     border-radius: 8px;
 }
@@ -105,8 +104,11 @@
 
 @media screen and (max-width: 1024px) {
     .discover-content {
-        grid-template-columns: 1fr;
+        display: block;
         padding: 120px 0 48px 0;
+        /* display: grid;
+        grid-template-columns: 1fr; */
+        /* row-gap: 8px; */
     }
 
     .discover-heading h1 {
@@ -122,14 +124,19 @@
         /* width: 100%; */
     }
 
-    .discover-heading button {
+    .discover-heading a {
         padding: 10px 20px;
         font-size: 1em;
     }
 
     .discover-carousel {
-        width: 55%;
+        /* width: 55%; */
         margin: 0 auto;
+        max-width: fit-content;
+    }
+
+    .carousel-item {
+        padding: 16px;
     }
 }
 
@@ -150,13 +157,33 @@
         font-size: 1.1em;
     }
 
-    .discover-heading button {
+    .discover-heading a {
         padding: 8px 16px;
         font-size: 0.9em;
     }
 
     .discover-carousel {
-        width: 90%;
+        width: 100%;
+        /* max-width: fit-content; */
+    }
+
+    .discover-clouds {
+        bottom: -90px;
+    }
+
+    /* .discover-clouds img {
+        width: 100%;
+        height: auto;
+    } */
+
+    .discover-clouds img:nth-child(1) {
+        width: 160%;
+        height: auto;
+    }
+
+    .discover-clouds img:nth-child(2) {
+        width: 140%;
+        height: auto;
     }
 }
 
@@ -188,14 +215,19 @@
         width: 100%;
     }
 
-    .discover-heading button {
+    .discover-heading a {
         padding: 6px 12px;
         font-size: 0.8em;
     }
 
     .discover-carousel {
-        width: 85%;
-        margin: 0;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    .discover-clouds {
+        bottom: -70px;
     }
 }
 
@@ -203,11 +235,15 @@
     .discover-carousel {
         width: 80%;
     }
+
+    .discover-clouds {
+        bottom: -60px;
+    }
 }
 
 @media screen and (max-width: 496px) {
     .discover-carousel {
-        width: 60%;
+        width: 100%;
         margin-top: 16px;
     }
 }

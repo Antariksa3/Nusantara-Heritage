@@ -21,6 +21,7 @@
 @media screen and (max-width: 768px) {
     .glass-info {
         width: auto;
+        display: none;
     }
 
     .glass-info h5 {

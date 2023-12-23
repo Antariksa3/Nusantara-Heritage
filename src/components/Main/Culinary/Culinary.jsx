@@ -36,7 +36,7 @@ const Culinary = () => {
                     disableOnInteraction: false,
                 }}
                 breakpoints={{
-                    430: {
+                    432: {
                         slidesPerView: 1.5,
                     },
                     576: {

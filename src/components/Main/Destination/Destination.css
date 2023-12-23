@@ -50,6 +50,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .destination {
+        padding: 0 60px 80px;
+    }
+
     .destination-cards {
         grid-template-columns: repeat(3, 1fr);
     }
