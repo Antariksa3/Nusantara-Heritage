@@ -6,6 +6,30 @@ const Summary = (props) => {
     return (
         <div className="summary">
             <h3>Summary</h3>
+            <div className="summary-list">
+                <ul>
+                    <li>
+                        <h4>
+                            Ibu kota: {props.capital}
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            Etnik: {props.ethnic}
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            Terletak di Kepulauan: {props.island}
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            Bahasa Daerah: {props.local_language}
+                        </h4>
+                    </li>
+                </ul>
+            </div>
             <div className="summary-grid">
                 <div className="summary-left">
                     <div className="summary-content">

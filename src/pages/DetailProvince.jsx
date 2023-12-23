@@ -30,6 +30,10 @@ const DetailProvince = () => {
                     music_image={detailProv.music_image}
                     weapon={detailProv.weapon}
                     weapon_image={detailProv.weapon_image}
+                    capital={detailProv.capital}
+                    ethnic={detailProv.ethnic}
+                    island={detailProv.island}
+                    local_language={detailProv.local_language}
                 />
             )}
             <Footer />

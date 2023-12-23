@@ -19,6 +19,10 @@ const DetailExplore = (props) => {
                 music_image={props.music_image}
                 weapon={props.weapon}
                 weapon_image={props.weapon_image}
+                capital={props.capital}
+                ethnic={props.ethnic}
+                island={props.island}
+                local_language={props.local_language}
             />
             <AdditionalInfo />
         </main>
