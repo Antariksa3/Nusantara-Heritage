@@ -19,6 +19,15 @@
     fill: #BCDE3B;
 }
 
+.indonesian-map>#Provinces>g>g>path:hover {
+    fill: #BCDE3B;
+}
+
+.indonesian-map>#Provinces>g>path:hover {
+    fill: #BCDE3B;
+}
+
+
 .indonesian-map>#Provinces>g:hover {
     fill: #BCDE3B;
 }
