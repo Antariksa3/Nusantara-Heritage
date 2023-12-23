@@ -32,12 +32,11 @@ const Header = () => {
             <div className={`menu ${showSidebar && 'active'}`} onClick={handleShowSidebar}>=</div>
             <div className={`close-btn ${showSidebar && 'active'}`} onClick={handleShowSidebar}>x</div>
             <nav className={`nav-a ${showSidebar && 'active'}`}>
-                <ScrollLink to="explore" spy={true} smooth={true} offset={-20} duration={500}>Provinsi</ScrollLink>
-                <ScrollLink to="destination" spy={true} smooth={true} offset={-60} duration={500}>Wisata</ScrollLink>
-                <ScrollLink to="culinary" spy={true} smooth={true} offset={-120} duration={500}>Kuliner</ScrollLink>
-                <ScrollLink to="culture" spy={true} smooth={true} offset={-120} duration={500}>Kebudayaan</ScrollLink>
+                <ScrollLink to="explore" spy={true} smooth={true} offset={-20} duration={500} onClick={handleShowSidebar}>Provinsi</ScrollLink>
+                <ScrollLink to="destination" spy={true} smooth={true} offset={-60} duration={500} onClick={handleShowSidebar}>Wisata</ScrollLink>
+                <ScrollLink to="culinary" spy={true} smooth={true} offset={-120} duration={500} onClick={handleShowSidebar}>Kuliner</ScrollLink>
+                <ScrollLink to="culture" spy={true} smooth={true} offset={-120} duration={500} onClick={handleShowSidebar}>Kebudayaan</ScrollLink>
                 {/* <NavLink to={""}>Kebudayaan</NavLink> */}
-                <NavLink to={""}>Bahasa</NavLink>
             </nav>
         </header>
     )

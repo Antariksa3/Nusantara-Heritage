@@ -1,21 +1,21 @@
 import React from "react";
 
 import './RightContent.css';
-import Wayang from '../../../../assets/images/culture/wayang.svg'
+import RumahGadang from '../../../../assets/images/culture/rumah-gadang.svg'
 
-const RightContent = () => {
+function RightContent(props) {
     return (
         <div className="container">
             <div className="top-info">
-                <img className="wayang" src={Wayang}></img>
+                <img className="image" src={props.image}></img>
                 <div className="title">
-                    <h4 className="year">2003</h4>
-                    <h3 className="cult-name">Wayang</h3>
+                    <h4 className="year">{props.category}</h4>
+                    <h3 className="cult-name">{props.name}</h3>
                 </div>
             </div>
             <div className="circle" />
             <p className="main-info">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.
+                {props.text}
             </p>
         </div>
     )

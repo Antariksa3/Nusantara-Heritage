@@ -6,7 +6,7 @@
 .content>.top-info {
     display: flex;
     position: absolute;
-    top: -7vw;
+    top: -2vw;
     left: -2vw;
 }
 
@@ -26,8 +26,9 @@
     background: linear-gradient(to bottom, rgba(103, 46, 28, 100), rgba(26, 116, 142, 0))
 }
 
-.content>.top-info>.wayang {
-    width: 17vw;
+.content>.top-info>.image {
+    width: 20vw;
+    height: 30vh;
 }
 
 .content>.top-info>.title {
@@ -46,6 +47,30 @@
 .content>.top-info>.title>.year {
     color: white;
     font-size: 2vw;
+}
+
+@media (max-width: 1024px) {
+    .content>.main-info {
+        margin-top: 10vh;
+        font-weight: 300;
+        opacity: 80%;
+        color: white;
+        width: auto;
+        text-align: justify;
+    }
+
+    .content>.top-info>.title {
+        margin-left: 1vw;
+        margin-bottom: 10px;
+        display: flex;
+        flex-flow: column;
+        justify-content: end;
+    }
+
+    .content>.top-info>.title>.cult-name {
+        color: #F0DF99;
+        font-size: 4vw;
+    }
 }
 
 @media (max-width: 768px) {
@@ -70,9 +95,9 @@
         height: 50vw;
     }
 
-    .content>.top-info>.wayang {
+    .content>.top-info>.image {
         padding: 0;
-        width: 40vw;
+        width: 38vw;
     }
 
     .content>.top-info>.title {
@@ -86,16 +111,17 @@
 
     .content>.top-info>.title>.year {
         color: white;
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     .content>.main-info {
-        margin-top: 25vh;
+        margin-top: 14vh;
         font-weight: 300;
         opacity: 80%;
         color: white;
         width: auto;
         text-align: justify;
+        padding-bottom: 20px;
     }
 }
 
@@ -122,7 +148,7 @@
         height: 50vw;
     }
 
-    .content>.top-info>.wayang {
+    .content>.top-info>.image {
         padding: 0;
         width: 40vw;
     }

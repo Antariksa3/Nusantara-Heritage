@@ -24,6 +24,16 @@
     grid-gap: 5em;
 }
 
+
+
+@media (max-width: 1024px) {
+    .culture>.grid {
+        padding: 40px 0 0 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2em;
+    }
+}
+
 @media (max-width: 768px) {
     .culture {
         position: relative;
@@ -33,7 +43,6 @@
 
     .culture>.grid {
         padding: 120px 0 0 0;
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 2em;
     }
