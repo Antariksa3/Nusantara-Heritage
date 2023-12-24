@@ -28,7 +28,7 @@ const DetailProvince = () => {
                     dance_desc={detailProv.dance_desc}
                     dance_image={detailProv.dance_image}
                     house={detailProv.regional_house}
-                    house_desc={detailProv.regional_house_desc}
+                    house_desc={detailProv.house_desc}
                     house_image={detailProv.regional_house_image}
                     music={detailProv.music}
                     music_desc={detailProv.music_desc}
